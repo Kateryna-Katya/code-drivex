@@ -15,8 +15,8 @@
 
   <script src="https://unpkg.com/lucide@latest"></script>
     <script src="https://unpkg.com/lucide@latest"></script>
-    <script type="module" crossorigin src="/code-drivex/assets/main-BZxKn_lk.js"></script>
-    <link rel="stylesheet" crossorigin href="/code-drivex/assets/main-ttC62LUW.css">
+    <script type="module" crossorigin src="/code-drivex/assets/main-Dq9I6aUH.js"></script>
+    <link rel="stylesheet" crossorigin href="/code-drivex/assets/main-fZ3MNZZJ.css">
   </head>
   <body>
     <header class="header">
@@ -196,64 +196,59 @@
 </section>
 
 <section id="contact" class="section contact">
-    <div class="container contact__container">
-        <div class="contact__info">
-            <h2 class="section__title">Свяжитесь с нами</h2>
-            <p class="contact__desc">
-                Получить больше информации или бесплатную консультацию по всем вопросам.
-                Заполните форму, и мы свяжемся с вами.
-            </p>
-            <div class="contact__details">
-                <div class="contact__item">
-                    <i data-lucide="mail"></i>
-                    <a href="mailto:hello@code-drivex.blog">hello@code-drivex.blog</a>
-                </div>
-                <div class="contact__item">
-                    <i data-lucide="phone"></i>
-                    <a href="tel:+33783921045">+33 7 83 92 10 45</a>
-                </div>
-                <div class="contact__item">
-                    <i data-lucide="map-pin"></i>
-                    <span>12 Rue de la Paix, 75002 Paris, France</span>
-                </div>
-            </div>
-        </div>
+  <div class="container contact__container">
+      <div class="contact__info">
+          <h2 class="section__title">Свяжитесь с нами</h2>
+          <p class="contact__desc">
+              Получить больше информации или бесплатную консультацию.
+          </p>
+          <div class="contact__details">
+              <div class="contact__item">
+                  <i data-lucide="mail"></i>
+                  <a href="mailto:hello@code-drivex.blog">hello@code-drivex.blog</a>
+              </div>
+              <div class="contact__item">
+                  <i data-lucide="phone"></i>
+                  <a href="tel:+33783921045">+33 7 83 92 10 45</a>
+              </div>
+          </div>
+      </div>
 
-        <form class="contact__form" id="contactForm" novalidate>
-            <div class="form-group">
-                <label for="name">Ваше имя</label>
-                <input type="text" id="name" name="name" placeholder="Иван Иванов" required>
-                <span class="error-msg">Введите имя</span>
-            </div>
+      <form class="contact__form" id="contactForm" novalidate>
+          <div class="form-group">
+              <label for="name">Ваше имя</label>
+              <input type="text" id="name" name="name" placeholder="Иван Иванов" required>
+              <span class="error-msg">Введите имя</span>
+          </div>
 
-            <div class="form-group">
-                <label for="email">Email</label>
-                <input type="email" id="email" name="email" placeholder="example@mail.com" required>
-                <span class="error-msg">Введите корректный email</span>
-            </div>
+          <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" placeholder="example@mail.com" required>
+              <span class="error-msg">Введите корректный email</span>
+          </div>
 
-            <div class="form-group">
-                <label for="phone">Телефон</label>
-                <input type="tel" id="phone" name="phone" placeholder="+33..." required>
-                <span class="error-msg">Только цифры и код страны</span>
-            </div>
+          <div class="form-group">
+              <label for="phone">Телефон</label>
+              <input type="tel" id="phone" name="phone" placeholder="+33..." required>
+              <span class="error-msg">Только цифры</span>
+          </div>
 
-            <div class="form-group captcha-group">
-                <label id="captchaLabel">Сколько будет 2 + 2?</label>
-                <input type="text" id="captchaInput" required>
-                <span class="error-msg">Неверный ответ</span>
-            </div>
+          <div class="form-group captcha-group">
+              <label id="captchaLabel">2 + 2?</label>
+              <input type="text" id="captchaInput" required>
+              <span class="error-msg">Неверный ответ</span>
+          </div>
 
-            <div class="form-checkbox">
-                <input type="checkbox" id="policy" required>
-                <label for="policy">Я согласен с <a href="./personal-data-policy.html">политикой обработки
-                        данных</a></label>
-            </div>
+          <div class="form-checkbox">
+              <input type="checkbox" id="policy" required>
+              <label for="policy">Я согласен с <a href="personal-data-policy.html">политикой</a></label>
+          </div>
 
-            <button type="submit" class="btn btn--primary btn--full">Пройти регистрацию</button>
-            <div class="form-status" id="formStatus"></div>
-        </form>
-    </div>
+          <button type="submit" class="btn btn--primary btn--full">Пройти регистрацию</button>
+
+          <div class="form-status" id="formStatus"></div>
+      </form>
+  </div>
 </section>
     </main>
 
@@ -319,9 +314,11 @@
       </p>
       <button id="acceptCookie" class="btn btn--outline btn--sm">Принять</button>
     </div>
-<script src="https://unpkg.com/lenis@1.0.45/dist/lenis.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script src="https://unpkg.com/split-type"></script>
+    <script src="https://unpkg.com/lenis@1.0.45/dist/lenis.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
 
   </body>
 </html>

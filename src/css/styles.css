@@ -871,7 +871,7 @@ h4 {
 }
 
 .page-content h1 {
-    font-size: clamp(2.5rem, 5vw, 4rem);
+    font-size: clamp(1.8rem, 5vw, 4rem);
     margin-bottom: 50px;
     color: var(--accent-primary);
     /* Лаймовый заголовок */
@@ -931,4 +931,39 @@ h4 {
 .page-content a:hover {
     border-bottom-color: var(--accent-primary);
     background: rgba(204, 255, 0, 0.1);
+}
+/* Стили для валидации */
+.error-msg {
+  color: #ff4d4d;
+  font-size: 0.8rem;
+  position: absolute;
+  bottom: -20px;
+  left: 0;
+  opacity: 0;
+  transition: 0.2s;
+}
+
+/* Когда JS добавляет класс .error родителю */
+.form-group.error input { border-color: #ff4d4d; }
+.form-group.error .error-msg { opacity: 1; }
+
+/* Ошибка чекбокса */
+.form-checkbox.error {
+  outline: 1px solid #ff4d4d;
+  border-radius: 4px;
+  padding: 5px;
+}
+
+/* Сообщение статуса */
+.form-status {
+  margin-top: 20px;
+  text-align: center;
+  font-weight: 600;
+  min-height: 24px;
+}
+.form-checkbox.error {
+  border: 1px solid #ff4d4d;
+  padding: 10px;
+  border-radius: 8px;
+  background: rgba(255, 77, 77, 0.1);
 }

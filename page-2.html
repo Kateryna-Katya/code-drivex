@@ -5,29 +5,47 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Page 2</title>
-    <link rel="stylesheet" crossorigin href="/code-drivex/assets/styles-guStct1H.css">
+    <link rel="stylesheet" crossorigin href="/code-drivex/assets/styles-DGBFeyZM.css">
   </head>
   <body>
     <header class="header">
-  <div class="container">
-    <nav class="nav">
-      <a class="nav-logo" href="./index.html" aria-label="Site logo">
-        <svg class="nav-logo-icon" width="100" height="30">
-          <use href="{=$icon-path}"></use>
-        </svg>
-      </a>
-      <ul class="nav-list">
-        <li class="nav-item">
-          <a class="nav-link {=$highlight-act}" href="./page-2.html">Page 2</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link {=$highlight-curr}" href="./page-3.html">Page 3</a>
-        </li>
+  <div class="header__container container">
+    <a href="/" class="header__logo">
+      Node-Onix<span class="dot">.</span>
+    </a>
+
+    <nav class="header__nav">
+      <ul class="header__menu">
+        <li class="header__item"><a href="#hero" class="header__link">Главная</a></li>
+        <li class="header__item"><a href="#about" class="header__link">Платформа</a></li>
+        <li class="header__item"><a href="#benefits" class="header__link">Преимущества</a></li>
+        <li class="header__item"><a href="#innovation" class="header__link">Инновации</a></li>
+        <li class="header__item"><a href="#blog" class="header__link">Блог</a></li>
+      </ul>
+    </nav>
+
+    <div class="header__action">
+      <a href="#contact" class="btn btn--outline header__btn-contact">Связаться</a>
+      <button class="burger" aria-label="Menu">
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </div>
+
+  <div class="mobile-menu">
+    <nav class="mobile-menu__nav">
+      <ul class="mobile-menu__list">
+        <li><a href="#hero" class="mobile-menu__link">Главная</a></li>
+        <li><a href="#about" class="mobile-menu__link">Платформа</a></li>
+        <li><a href="#benefits" class="mobile-menu__link">Преимущества</a></li>
+        <li><a href="#innovation" class="mobile-menu__link">Инновации</a></li>
+        <li><a href="#blog" class="mobile-menu__link">Блог</a></li>
+        <li><a href="#contact" class="mobile-menu__link">Связаться</a></li>
       </ul>
     </nav>
   </div>
 </header>
-
 
     <main>
       <div class="container">
@@ -39,19 +57,65 @@
 
     <footer class="footer">
   <div class="container">
-    <p class="footer-desc">
-      Made with ✨ by
-      <a
-        class="footer-link"
-        href="https://goit.global/ua/"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        GoIT team
-      </a>
-    </p>
+    <div class="footer__grid">
+      <div class="footer__col">
+        <a href="/" class="footer__logo">Code-DriveX.</a>
+        <p class="footer__desc">
+          Образовательная платформа нового поколения.
+          Технологии, которые работают на вас.
+        </p>
+        <div class="footer__socials">
+          <a href="#" class="social-link" data-lucide="linkedin"></a>
+          <a href="#" class="social-link" data-lucide="instagram"></a>
+          <a href="#" class="social-link" data-lucide="twitter"></a>
+        </div>
+      </div>
+
+      <div class="footer__col">
+        <h3 class="footer__title">Навигация</h3>
+        <ul class="footer__list">
+          <li><a href="#programs">Все курсы</a></li>
+          <li><a href="#mentors">Менторы</a></li>
+          <li><a href="#about">О нас</a></li>
+          <li><a href="#faq">FAQ</a></li>
+        </ul>
+      </div>
+
+      <div class="footer__col">
+        <h3 class="footer__title">Правовая информация</h3>
+        <ul class="footer__list">
+          <li><a href="privacy.html">Privacy Policy</a></li>
+          <li><a href="cookies.html">Cookie Policy</a></li>
+          <li><a href="terms.html">Terms of Use</a></li>
+          <li><a href="return.html">Return Policy</a></li>
+          <li><a href="disclaimer.html">Disclaimer</a></li>
+          <li><a href="personal-data-policy.html">Personal Data</a></li>
+        </ul>
+      </div>
+
+      <div class="footer__col">
+        <h3 class="footer__title">Контакты</h3>
+        <ul class="footer__contacts">
+          <li>
+            <i data-lucide="mail"></i>
+            <a href="mailto:hello@code-drivex.blog">hello@code-drivex.blog</a>
+          </li>
+          <li>
+            <i data-lucide="phone"></i>
+            <a href="tel:+33123456789">+33 1 23 45 67 89</a>
+          </li>
+          <li>
+            <i data-lucide="map-pin"></i>
+            <span>12 Rue de la Paix, 75002 Paris, France</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer__bottom">
+      <p>&copy; 2025 Code-DriveX. Платформа уже доступна в Европе.</p>
+    </div>
   </div>
 </footer>
-
   </body>
 </html>

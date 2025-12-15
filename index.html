@@ -1,56 +1,331 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/code-drivex/favicon.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vanilla App Template</title>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Code-DriveX | IT-школа нового поколения</title>
+  <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Syne:wght@500;700;800&display=swap"
+    rel="stylesheet">
+
+  <script src="https://unpkg.com/lucide@latest"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
     <script type="module" crossorigin src="/code-drivex/index.js"></script>
-    <link rel="stylesheet" crossorigin href="/code-drivex/assets/styles-guStct1H.css">
+    <link rel="stylesheet" crossorigin href="/code-drivex/assets/styles-DGBFeyZM.css">
   </head>
   <body>
     <header class="header">
-  <div class="container">
-    <nav class="nav">
-      <a class="nav-logo" href="./index.html" aria-label="Site logo">
-        <svg class="nav-logo-icon" width="100" height="30">
-          <use href="{=$icon-path}"></use>
-        </svg>
-      </a>
-      <ul class="nav-list">
-        <li class="nav-item">
-          <a class="nav-link {=$highlight-act}" href="./page-2.html">Page 2</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link {=$highlight-curr}" href="./page-3.html">Page 3</a>
-        </li>
+  <div class="header__container container">
+    <a href="/" class="header__logo">
+      Node-Onix<span class="dot">.</span>
+    </a>
+
+    <nav class="header__nav">
+      <ul class="header__menu">
+        <li class="header__item"><a href="#hero" class="header__link">Главная</a></li>
+        <li class="header__item"><a href="#about" class="header__link">Платформа</a></li>
+        <li class="header__item"><a href="#benefits" class="header__link">Преимущества</a></li>
+        <li class="header__item"><a href="#innovation" class="header__link">Инновации</a></li>
+        <li class="header__item"><a href="#blog" class="header__link">Блог</a></li>
+      </ul>
+    </nav>
+
+    <div class="header__action">
+      <a href="#contact" class="btn btn--outline header__btn-contact">Связаться</a>
+      <button class="burger" aria-label="Menu">
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </div>
+
+  <div class="mobile-menu">
+    <nav class="mobile-menu__nav">
+      <ul class="mobile-menu__list">
+        <li><a href="#hero" class="mobile-menu__link">Главная</a></li>
+        <li><a href="#about" class="mobile-menu__link">Платформа</a></li>
+        <li><a href="#benefits" class="mobile-menu__link">Преимущества</a></li>
+        <li><a href="#innovation" class="mobile-menu__link">Инновации</a></li>
+        <li><a href="#blog" class="mobile-menu__link">Блог</a></li>
+        <li><a href="#contact" class="mobile-menu__link">Связаться</a></li>
       </ul>
     </nav>
   </div>
 </header>
 
-
-    <main>
+    <main class="main" id="main-content">
       <!-- Loads the specified .html file -->
-      
+      <section id="hero" class="hero">
+    <div class="container hero__container">
+        <div class="hero__content">
+            <div class="hero__badge">Технология нового поколения</div>
+            <h1 class="hero__title split-text">
+                Воплотите мечты <br>
+                <span class="text-accent">в реальность</span>
+            </h1>
+            <p class="hero__desc">
+                Откройте новые возможности с экспертной поддержкой на всех этапах.
+                Платформа уже доступна в Европе.
+            </p>
+            <div class="hero__btns">
+                <a href="#contact" class="btn btn--primary">Начать сейчас</a>
+                <a href="#about" class="btn btn--outline">Узнать детали</a>
+            </div>
+        </div>
+        <div class="hero__visual">
+            <div class="hero__img-wrapper">
+                <img src="/code-drivex/assets/one-CwrJ8QCv.jpg" alt="IT Innovation people" class="hero__img">
+                <div class="hero__overlay"></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="about" class="section about">
+    <div class="container">
+        <div class="section__header">
+            <h2 class="section__title">Переосмыслите подход <br>к развитию</h2>
+            <p class="section__subtitle">Инновационная технология для тех, кто ценит результат.</p>
+        </div>
+        <div class="about__grid">
+            <div class="about__card">
+                <i data-lucide="zap" class="card-icon"></i>
+                <h3>Быстрый старт</h3>
+                <p>Подключение занимает 2 минуты. Легко разобраться без опыта.</p>
+            </div>
+            <div class="about__card about__card--accent">
+                <i data-lucide="globe" class="card-icon"></i>
+                <h3>Доступ открыт</h3>
+                <p>Предложение активно только в странах ЕС. Глобальная инфраструктура.</p>
+            </div>
+            <div class="about__card">
+                <i data-lucide="shield-check" class="card-icon"></i>
+                <h3>Проверенный партнер</h3>
+                <p>Методологии, доказавшие эффективность. Поддержка по всем вопросам.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="benefits" class="section benefits">
+    <div class="container">
+        <div class="benefits__wrapper">
+            <div class="benefits__content">
+                <h2 class="section__title">Решения, которые <span class="text-accent">меняют правила</span> игры</h2>
+                <ul class="benefits__list">
+                    <li>
+                        <span class="check-icon"><i data-lucide="check"></i></span>
+                        <div>
+                            <h4>Пассивный доход</h4>
+                            <p>Стратегия роста на базе инноваций. Программа пассивного дохода доступна уже сегодня.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <span class="check-icon"><i data-lucide="check"></i></span>
+                        <div>
+                            <h4>Удобная адаптация</h4>
+                            <p>Пошаговый путь, понятный каждому. Без сложностей.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <span class="check-icon"><i data-lucide="check"></i></span>
+                        <div>
+                            <h4>AI-инструменты</h4>
+                            <p>AI-инструменты для реальных задач. Постройте карьеру, которая работает на вас.</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="benefits__visual">
+                <img src="/code-drivex/assets/two-D2X-SjB_.jpg" alt="Benefits Dashboard">
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="innovation" class="section innovation">
+    <div class="container">
+        <div class="innovation__banner">
+            <h2 class="innovation__title">Передовая цифровая <br>инфраструктура</h2>
+            <a href="#contact" class="btn btn--primary">Оценить перспективы</a>
+        </div>
+    </div>
+</section>
+
+<section id="blog" class="section blog">
+    <div class="container">
+        <h2 class="section__title mb-large">Последние новости</h2>
+        <div class="blog__grid">
+            <article class="blog__item">
+                <div class="blog__img">
+                    <img src="/code-drivex/assets/three-TxC9eQcW.jpg" alt="Blog 1">
+                </div>
+                <div class="blog__content">
+                    <span class="blog__date">12.12.2024</span>
+                    <h4>Технология нового поколения в действии</h4>
+                    <a href="#contact" class="link-arrow">Читать далее <i data-lucide="arrow-right"></i></a>
+                </div>
+            </article>
+            <article class="blog__item">
+                <div class="blog__img">
+                    <img src="/code-drivex/assets/four-Dm72mPMe.jpg" alt="Blog 2">
+                </div>
+                <div class="blog__content">
+                    <span class="blog__date">10.12.2024</span>
+                    <h4>Как расширить горизонты проекта?</h4>
+                    <a href="contact" class="link-arrow">Читать далее <i data-lucide="arrow-right"></i></a>
+                </div>
+            </article>
+            <article class="blog__item">
+                <div class="blog__img">
+                    <img src="/code-drivex/assets/five-BgQNO68u.jpg" alt="Blog 3">
+                </div>
+                <div class="blog__content">
+                    <span class="blog__date">08.12.2024</span>
+                    <h4>Стратегии роста на 2025 год</h4>
+                    <a href="#contact" class="link-arrow">Читать далее <i data-lucide="arrow-right"></i></a>
+                </div>
+            </article>
+        </div>
+    </div>
+</section>
+
+<section id="contact" class="section contact">
+    <div class="container contact__container">
+        <div class="contact__info">
+            <h2 class="section__title">Свяжитесь с нами</h2>
+            <p class="contact__desc">
+                Получить больше информации или бесплатную консультацию по всем вопросам.
+                Заполните форму, и мы свяжемся с вами.
+            </p>
+            <div class="contact__details">
+                <div class="contact__item">
+                    <i data-lucide="mail"></i>
+                    <a href="mailto:support@node-onix.today">support@node-onix.today</a>
+                </div>
+                <div class="contact__item">
+                    <i data-lucide="phone"></i>
+                    <a href="tel:+33123456789">+33 1 23 45 67 89</a>
+                </div>
+                <div class="contact__item">
+                    <i data-lucide="map-pin"></i>
+                    <span>12 Rue de la Paix, 75002 Paris, France</span>
+                </div>
+            </div>
+        </div>
+
+        <form class="contact__form" id="contactForm" novalidate>
+            <div class="form-group">
+                <label for="name">Ваше имя</label>
+                <input type="text" id="name" name="name" placeholder="Иван Иванов" required>
+                <span class="error-msg">Введите имя</span>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="example@mail.com" required>
+                <span class="error-msg">Введите корректный email</span>
+            </div>
+
+            <div class="form-group">
+                <label for="phone">Телефон</label>
+                <input type="tel" id="phone" name="phone" placeholder="+33..." required>
+                <span class="error-msg">Только цифры и код страны</span>
+            </div>
+
+            <div class="form-group captcha-group">
+                <label id="captchaLabel">Сколько будет 2 + 2?</label>
+                <input type="text" id="captchaInput" required>
+                <span class="error-msg">Неверный ответ</span>
+            </div>
+
+            <div class="form-checkbox">
+                <input type="checkbox" id="policy" required>
+                <label for="policy">Я согласен с <a href="./personal-data-policy.html">политикой обработки
+                        данных</a></label>
+            </div>
+
+            <button type="submit" class="btn btn--primary btn--full">Пройти регистрацию</button>
+            <div class="form-status" id="formStatus"></div>
+        </form>
+    </div>
+</section>
     </main>
 
     <footer class="footer">
   <div class="container">
-    <p class="footer-desc">
-      Made with ✨ by
-      <a
-        class="footer-link"
-        href="https://goit.global/ua/"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        GoIT team
-      </a>
-    </p>
+    <div class="footer__grid">
+      <div class="footer__col">
+        <a href="/" class="footer__logo">Code-DriveX.</a>
+        <p class="footer__desc">
+          Образовательная платформа нового поколения.
+          Технологии, которые работают на вас.
+        </p>
+        <div class="footer__socials">
+          <a href="#" class="social-link" data-lucide="linkedin"></a>
+          <a href="#" class="social-link" data-lucide="instagram"></a>
+          <a href="#" class="social-link" data-lucide="twitter"></a>
+        </div>
+      </div>
+
+      <div class="footer__col">
+        <h3 class="footer__title">Навигация</h3>
+        <ul class="footer__list">
+          <li><a href="#programs">Все курсы</a></li>
+          <li><a href="#mentors">Менторы</a></li>
+          <li><a href="#about">О нас</a></li>
+          <li><a href="#faq">FAQ</a></li>
+        </ul>
+      </div>
+
+      <div class="footer__col">
+        <h3 class="footer__title">Правовая информация</h3>
+        <ul class="footer__list">
+          <li><a href="privacy.html">Privacy Policy</a></li>
+          <li><a href="cookies.html">Cookie Policy</a></li>
+          <li><a href="terms.html">Terms of Use</a></li>
+          <li><a href="return.html">Return Policy</a></li>
+          <li><a href="disclaimer.html">Disclaimer</a></li>
+          <li><a href="personal-data-policy.html">Personal Data</a></li>
+        </ul>
+      </div>
+
+      <div class="footer__col">
+        <h3 class="footer__title">Контакты</h3>
+        <ul class="footer__contacts">
+          <li>
+            <i data-lucide="mail"></i>
+            <a href="mailto:hello@code-drivex.blog">hello@code-drivex.blog</a>
+          </li>
+          <li>
+            <i data-lucide="phone"></i>
+            <a href="tel:+33123456789">+33 1 23 45 67 89</a>
+          </li>
+          <li>
+            <i data-lucide="map-pin"></i>
+            <span>12 Rue de la Paix, 75002 Paris, France</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer__bottom">
+      <p>&copy; 2025 Code-DriveX. Платформа уже доступна в Европе.</p>
+    </div>
   </div>
 </footer>
-
+    <div id="cookiePopup" class="cookie-popup">
+      <p>Этот сайт использует cookies для улучшения работы. Подробнее — в нашей <a href="./cookies.html">Cookie политике</a>.
+      </p>
+      <button id="acceptCookie" class="btn btn--outline btn--sm">Принять</button>
+    </div>
+<script src="https://unpkg.com/lenis@1.0.45/dist/lenis.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
 
   </body>
 </html>
